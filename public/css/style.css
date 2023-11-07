@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(140, 140, 140);
+    font-family: Karla, sans-serif;
+    font-weight: bold;
+}
+
+.header{
+    text-align: center;
+    font-size: 9px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.header h1{
+    font-family: Karla, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.header img{
+    margin-top: 60px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.linkButton {
+    width: 676px;
+    height: 56px;
+    background-color: white;
+    border-radius: 0;
+    border: solid white 2px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(144, 144, 144);
+    margin-bottom: 15px;
+    justify-content: center; /* Menengahkan tulisan "Website" ke tengah*/
+    align-items: center;
+    font-weight: 500;
+}
+
+.linkButton p{
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+    font-weight: 500;
+}
+
+.linkButton:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.shareButton{
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 20px;
+}
+
+.icon {
+    position: absolute;
+    margin-top: -66px;
+    right: 20;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    opacity: 100;
+    color: gray;
+    letter-spacing: 1.4px;
+}
+
+.shareButton:hover .icon{
+    opacity: 1;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(111, 111, 111, 0.584);
+}
