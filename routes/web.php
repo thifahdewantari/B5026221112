@@ -87,3 +87,14 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@views');
+
+//CRUD TUGAS 2 (CEWE)
+Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangBelanjaController@index');
+Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangBelanjaController@beli');
+Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangBelanjaController@store');
+Route::get('/keranjangbelanja/batal/{id}','App\Http\Controllers\KeranjangBelanjaController@batal');
+
+//CRUD NILAI (COWO)
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiController@nilai');
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiController@store');
+Route::get('/nilaikuliah/nilaitambah','App\Http\Controllers\NilaiController@nilaitambah');
