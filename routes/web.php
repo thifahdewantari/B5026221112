@@ -98,3 +98,12 @@ Route::get('/keranjangbelanja/batal/{id}','App\Http\Controllers\KeranjangBelanja
 Route::get('/nilaikuliah','App\Http\Controllers\NilaiController@nilai');
 Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiController@store');
 Route::get('/nilaikuliah/nilaitambah','App\Http\Controllers\NilaiController@nilaitambah');
+
+//CRUD HEWAN
+Route::get('/hewan','App\Http\Controllers\HewanController@index');
+Route::get('/hewan/tambahhewan','App\Http\Controllers\HewanController@tambahhewan');
+Route::post('/hewan/store','App\Http\Controllers\HewanController@store');
+Route::get('/hewan/viewhewan/{kodehewan}','App\Http\Controllers\HewanController@viewhewan');
+Route::get('/hewan/edithewan/{kodehewan}','App\Http\Controllers\HewanController@edithewan');
+Route::post('/hewan/update','App\Http\Controllers\HewanController@update');
+Route::get('/hewan/hapushewan/{kodehewan}','App\Http\Controllers\HewanController@hapushewan');
