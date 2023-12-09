@@ -23,7 +23,7 @@
         <div class="form-group row">
             <label for="tersedia" class="col-sm-1 col-form-label">Ketersediaan</label>
             <div class="col-sm-10">
-                <input type="text" required="required" class="form-control" id="tersedia" name="tersedia">
+                <input type="text" required="required" class="form-control" id="tersedia" name="tersedia" placeholder="Y/N">
             </div>
         </div>
         <br>

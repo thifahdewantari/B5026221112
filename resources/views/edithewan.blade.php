@@ -4,8 +4,6 @@
 
 @section('konten')
 	<h3>Edit Hewan</h3>
-
-	<a href="/hewan"> Kembali</a>
 	<br/>
 
 	@foreach($hewan as $h)
@@ -28,7 +26,7 @@
         <div class="form-group row">
             <label for="tersedia" class="col-sm-1 col-form-label">Ketersediaan</label>
             <div class="col-sm-10">
-                <input type="text" required="required" class="form-control" id="tersedia" name="tersedia" value="{{ $h->tersedia }}">
+                <input type="text" required="required" class="form-control" id="tersedia" placeholder="Y/N" name="tersedia" value="{{ $h->tersedia }}">
             </div>
         </div>
         <br>

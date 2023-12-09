@@ -75,4 +75,18 @@ class HewanController extends Controller
 		// alihkan halaman ke halaman keranjang belanja
 		return redirect('/hewan');
 	}
+
+    public function cari(Request $request)
+	{
+		// menangkap data pencarian
+		$cari = $request->cari;
+
+    		// mengambil data dari table hewan sesuai pencarian data
+		$hewan = DB::table('hewan')
+		->where('namahewan','like',"%".$cari."%")
+        ->get();
+
+    		// mengirim data hewan ke view index
+		return view('indexhewan',['hewan' => $hewan, 'cari' => $cari]);
+	}
 }

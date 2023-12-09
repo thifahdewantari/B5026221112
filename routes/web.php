@@ -107,3 +107,4 @@ Route::get('/hewan/viewhewan/{kodehewan}','App\Http\Controllers\HewanController@
 Route::get('/hewan/edithewan/{kodehewan}','App\Http\Controllers\HewanController@edithewan');
 Route::post('/hewan/update','App\Http\Controllers\HewanController@update');
 Route::get('/hewan/hapushewan/{kodehewan}','App\Http\Controllers\HewanController@hapushewan');
+Route::get('/hewan/cari','App\Http\Controllers\HewanController@cari');
