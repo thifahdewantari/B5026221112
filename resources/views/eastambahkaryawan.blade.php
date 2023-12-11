@@ -1,4 +1,4 @@
-@extends('master')
+@extends('easmaster')
 
 @section('title','Karyawan')
 
