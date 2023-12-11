@@ -108,3 +108,9 @@ Route::get('/hewan/edithewan/{kodehewan}','App\Http\Controllers\HewanController@
 Route::post('/hewan/update','App\Http\Controllers\HewanController@update');
 Route::get('/hewan/hapushewan/{kodehewan}','App\Http\Controllers\HewanController@hapushewan');
 Route::get('/hewan/cari','App\Http\Controllers\HewanController@cari');
+
+//LAT EAS KARYAWAN
+Route::get('/karyawan','App\Http\Controllers\KaryawanController@index');
+Route::get('/karyawan/tambahkaryawan','App\Http\Controllers\KaryawanController@tambahkaryawan');
+Route::post('/karyawan/store','App\Http\Controllers\KaryawanController@store');
+Route::get('/karyawan/hapuskaryawan/{kodepegawai}','App\Http\Controllers\KaryawanController@hapuskaryawan');
