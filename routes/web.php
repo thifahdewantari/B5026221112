@@ -114,3 +114,9 @@ Route::get('/karyawan','App\Http\Controllers\KaryawanController@index');
 Route::get('/karyawan/tambahkaryawan','App\Http\Controllers\KaryawanController@tambahkaryawan');
 Route::post('/karyawan/store','App\Http\Controllers\KaryawanController@store');
 Route::get('/karyawan/hapuskaryawan/{kodepegawai}','App\Http\Controllers\KaryawanController@hapuskaryawan');
+
+//EAS KARYAWAN
+Route::get('/easkaryawan','App\Http\Controllers\EASKaryawanController@index');
+Route::get('/easkaryawan/eastambahkaryawan','App\Http\Controllers\EASKaryawanController@eastambahkaryawan');
+Route::post('/easkaryawan/store','App\Http\Controllers\EASKaryawanController@store');
+Route::get('/easkaryawan/eashapuskaryawan/{kodepegawai}','App\Http\Controllers\EASKaryawanController@eashapuskaryawan');
